@@ -1,0 +1,130 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/*custom properties, update these for your own design*/
+
+:root {
+    --ff-lora: 'Lora', serif; /*font family*/
+    --ff-gill: 'Gill Sans', sans-serif;
+    --ff-hoefler: 'Hoefler Text', sans-serif;
+    --ff-brushscript: 'Simple Brush Script', sans-serif;                                                
+
+    --clr-yellow: #b39831; /*color background, namings of all these can change*/
+    --clr-gray: #4f4e4b;
+    --clr-black: #2b1f08;
+
+    --bs: 0.25em, 0.25em 0.75em rgba(0,0,0,.25),
+        0.125em 0.125em 0.25em rgba(0,0,0,.15); /*box shadow vert, horizontal, blur, color*/
+        /*layering shadows, very subtle differences*/
+}
+
+/*Navigation bar*/
+
+.nav {
+    display: inline-flex;
+    align-items: center; /*align items vertically*/
+    margin: 0em 5em 1.5em 2em; /*top right bottom left*/
+    position: relative;
+    bottom: 2.5em;
+}
+
+.nav__logo {
+    font-family: var(--ff-brushscript);
+    font-size: 5em;
+    font-style: italic;
+    color: var(--clr-yellow);
+}
+
+.nav__logo a {
+    color: var(--clr-yellow);
+    text-decoration: none;
+}
+
+.nav__headings__all {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav__selection {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav__squares {
+    position: relative;
+    left: 2.5em;
+}
+
+.nav__bigsquare {
+    width: 2em;
+    height: 1.8em;
+    background-color: var(--clr-yellow);
+    transform: rotate(35deg);
+    position: relative;
+    bottom: 1.1em;
+    z-index: -2;
+}
+
+.nav__smallsquare {
+    width: 1.6em;
+    height: 1.4em;
+    background-color: #fff;
+    transform: rotate(35deg);
+    position: relative;
+    left: 0.2em;
+    bottom: 2.68em;
+    z-index: -1;
+}
+
+.nav__heading {
+    font-family: var(--ff-hoefler);
+    color: var(--clr-gray);
+    font-size: 1em;
+    margin-left: 5em;
+}
+
+.nav__heading a {
+    color: var(--clr-gray);
+    text-decoration: none;
+}
+
+.nav__selected__heading {
+    font-family: var(--ff-hoefler);
+    color: var(--clr-gray);
+    font-size: 1em;
+    padding-top: 0.2em;
+    margin-left: 5em;
+    background: #fff;
+    position: relative;
+    top: 1.5em;
+}
+
+.nav__selected__heading a {
+    color: var(--clr-gray);
+    text-decoration: none;
+}
+
+.nav__heading:hover, .nav__selected__heading:hover {
+    transform: scale(1.2,1.2);
+}
+
+.nav__heading a:hover, .nav__selected__heading a:hover {
+    color: #b39831;
+}
+
+.nav__barline {
+    content: '';
+    display: block;
+    width: 108.5%;
+    height: 1.5px;
+    background: #b39831;
+    margin-left: 2em;
+    position: relative;
+    bottom: 1em;
+}
