@@ -7,9 +7,9 @@
 /*custom properties, update these for your own design*/
 
 :root {
-    --ff-lora: 'Lora', serif; /*font family*/
-    --ff-gill: 'Gill Sans', sans-serif;
-    --ff-hoefler: 'Hoefler Text', sans-serif;
+    --ff-lora: 'Lora', serif; /*titles*/
+    --ff-gill: 'Gill Sans', sans-serif; /*body*/
+    --ff-hoefler: 'Hoefler Text', sans-serif; /*nav headings*/
     --ff-brushscript: 'Simple Brush Script', sans-serif;                                                
 
     --clr-yellow: #b39831; /*color background, namings of all these can change*/
@@ -26,7 +26,7 @@
 .nav {
     display: inline-flex;
     align-items: center; /*align items vertically*/
-    margin: 0em 5em 1.5em 2em; /*top right bottom left*/
+    margin: 0em 5em 0em 2em; /*top right bottom left*/
     position: relative;
     bottom: 2.5em;
 }
@@ -127,4 +127,146 @@
     margin-left: 2em;
     position: relative;
     bottom: 1em;
+}
+
+
+
+
+/*Introduction*/
+
+.intro {
+    margin: 0em 7em 0em 7em; /*top right bottom left*/
+    position: relative;
+    bottom: 3em;
+    display: flex;
+}
+
+.intro__name {
+    font-family: var(--ff-gill);
+    color: var(--clr-yellow);
+    font-size: 3.5em;
+}
+
+.intro__subtitle {
+    font-family: var(--ff-lora);
+    font-style: italic;
+    font-size: 1.1em;
+    position: relative;
+    color: var(--clr-black);
+    bottom: 1.5em;
+}
+
+.intro__description {
+    font-family: var(--ff-gill);
+    font-size: 1.2em;
+    color: var(--clr-black);
+    margin-bottom: 2em;
+    line-height: 1.5em;
+}
+
+.intro__mypic {
+    max-width: 50%;
+    max-height: 50%;
+    margin-left: 5em;
+}
+
+.redirect {
+    margin-top: 7em;
+}
+
+.redirect__topsection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.redirect__shapes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.redirect__line {
+    content: '';
+    display: flex;
+    width: 25em;
+    height: 1.5px;
+    background: #b39831;
+}
+
+.redirect__diamond {
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-bottom-color: var(--clr-yellow);
+    position: relative;
+    top: -10px;
+}
+
+.redirect__diamond::after {
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: 10px;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-top-color: var(--clr-yellow);
+}
+
+.redirect__title {
+    font-family: var(--ff-lora);
+    font-size: 2em;
+    color: var(--clr-yellow);
+}
+
+.redirect__links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 2em;
+}
+
+.redirect__btn {
+    border: 2.5px solid black;
+    background-color: white;
+    color: black;
+    padding: 15px 95px;
+    font-size: 22px;
+
+    cursor: pointer;
+}
+
+.redirect__indiv__btn {
+    border-color: var(--clr-yellow);
+    color: var(--clr-yellow);
+    text-decoration: none;
+}
+
+.redirect__btn:hover {
+    background-color: var(--clr-yellow);
+    color: #fff;
+}
+
+.hobbies {
+    margin: 10em 0em 3em 0em;
+}
+
+.bottom__div {
+    display: flex;
+    flex-direction: row;
+    margin: 0em 5em 1em 7em;
+}
+
+.bottom__img {
+    padding-top: 1em;
+}
+
+.bottom__para {
+    font-family: var(--ff-gill);
+    color: var(--clr-yellow);
+    font-size: 1.2em;
+    line-height: 1.5em;
+    margin-left: 1.5em;
+    word-spacing: 2px;
 }
