@@ -288,6 +288,149 @@ html {
     word-spacing: 2px;
 }
 
+/*UI Design*/
+
+.ui__packitsection {
+    margin-bottom: 7em;;
+}
+
+.ui__line {
+    content: '';
+    background: var(--clr-yellow);
+    height: 5px;
+    width: 80em;
+}
+
+.ui__casestudy {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 3em 7em 3em 7em;
+}
+
+.ui__example {
+    max-height: 25%;
+    max-width: 25%;
+    position: relative;
+    left: 80px;
+    margin-left: 1em;
+}
+
+.ui__right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    right: 80px;
+    bottom: 15px;
+    width: 60%;
+}
+
+.ui__title {
+    font-family: --var(--ff-lora);
+    color: var(--clr-black);
+    font-size: 3em;
+}
+
+.ui__desc {
+    font-family: var(--ff-gill);
+    color: var(--clr-black);
+    font-size: var(--fs-subtitle);
+    position: relative;
+    bottom: 25px;
+}
+
+.forward {
+    position: relative;
+    top: 0.6em;
+}
+
+.forward a {
+    display: flex;
+    align-items: center;
+}
+
+.forward a {
+    text-decoration: none;
+    color: var(--clr-black);
+}
+
+.forward a:hover .forward__button {
+    transform: scale(1.1, 1.1);
+}
+
+.forward a:hover .goaloha {
+    color: #b39831;
+}
+
+.goaloha {
+    font-family: var(--ff-lora);
+    font-size: 2em;
+    margin: 0em 1em 0em 1em;
+}
+
+.forward__button {
+    border: 2.5px solid #b39831;
+    background-color: white;
+    padding: 15px 15px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.forward__icon {
+    max-width: 32px;
+    max-height: 32px;
+}
+
+.backto {
+    display: flex;
+    align-items: center;
+}
+
+.backto a {
+    color: var(--clr-black);
+    text-decoration: none;
+}
+
+.backto a:hover .back__button {
+    transform: scale(1.1, 1.1);
+}
+
+.backto a:hover .backtoport {
+    color: var(--clr-yellow);
+}
+
+.backtoport {
+    font-family: var(--ff-lora);
+    font-size: 2em;
+    position: relative;
+    left: 2.5em;
+    bottom: 1.7em;
+    margin: 0em 1em 0em 1em;
+}
+
+.back__section {
+    margin: 10em 3em 5em 3em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.back__button {
+    border: 2.5px solid #b39831;
+    background-color: white;
+    padding: 15px 15px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.back__icons {
+    max-width: 32px;
+    max-height: 32px;
+}
+
+/*Pack-It*/
+
 .first {
     display: flex;
     flex-direction: column;
@@ -568,5 +711,84 @@ html {
     max-height: 64px;
 }
 
-/*ui designs*/
+/*Contact*/
 
+.contact__subtitle {
+    font-family: 'Courgette', cursive;
+    font-style: italic;
+    font-size: 1.1em;
+    font-weight: 100;
+    position: relative;
+    bottom: 2.25em;
+}
+
+.indiv__row1 {
+    display: flex;
+    margin: 1em 0em 2em 0em;
+}
+
+.indiv__row2 {
+    display: flex;
+    position: relative;
+    left: 1em;
+    
+}
+
+.contact__icons {
+    max-width: 72px;
+    max-height: 72px;
+}
+
+.contact__icons:hover {
+    transform: scale(1.2,1.2);
+}
+
+.special__icons {
+    max-width: 72px;
+    max-height: 72px;
+    margin: 0em 2em 0em 2em;
+}
+
+.special__icons:hover {
+    transform: scale(1.2,1.2);
+}
+
+/*Aloha*/
+
+.aloha__section {
+    margin: 3em 0em 7em 0em;
+}
+
+.aloha__factors {
+    display: flex;
+    justify-content: space-between;
+    margin: 2em 7em 0em 7em;
+}
+
+.aloha__heading {
+    font-family: var(--ff-gill);
+    font-size: 1em;
+    color: var(--clr-black);
+    position: relative;
+    top: 0.5em;
+}
+
+.aloha__desc {
+    font-family: var(--ff-gill);
+    font-size: 0.7em;
+    color: var(--clr-black);
+    position: relative;
+    bottom: 0.7em;
+}
+
+.prototype_exp1 {
+    display: flex;
+    align-items: center;
+    margin: 0em 15em 10em 15em;
+}
+
+.aloha__pics {
+    max-width: 30%;
+    max-height: 30%;
+    margin: 1em 5em 0em 5em;
+}
