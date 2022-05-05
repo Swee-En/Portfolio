@@ -833,3 +833,46 @@ html {
     font-size: 3em;
     max-width: 60%;
 }
+
+.yellow {
+    color: #b39831;
+}
+
+.note {
+    font-family: var(--ff-lora);
+    font-style: italic;
+    font-size: 1.1em;
+    line-height: 1.5em;
+    margin: 1em 10em 0em 11em;
+    color:#b39831
+}
+
+.note2 {
+    font-family: var(--ff-lora);
+    font-style: italic;
+    font-size: 1.1em;
+    line-height: 1.5em;
+    margin: 1em 10em 0em 15em;
+    color:#b39831
+}
+
+.animation {
+    max-width: 70%;
+    max-height: 70%;
+}
+
+.assets__pic {
+    max-width: 45%;
+    max-height: 45%;
+}
+
+.twopics + .twopics {
+    margin: 1em;
+}
+
+.friend__icons {
+    max-width: 64px;
+    max-height: 64px;
+    position: relative;
+    top: 0.7em;
+}
