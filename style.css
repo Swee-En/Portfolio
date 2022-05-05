@@ -190,7 +190,7 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 1em;
+    margin-bottom: 3em;
 }
 
 .redirect__shapes {
@@ -342,7 +342,7 @@ html {
 
 .forward {
     position: relative;
-    top: 0.6em;
+    top: 0.4em;
 }
 
 .forward a {
@@ -439,6 +439,12 @@ html {
     bottom: 3em;
 }
 
+.firstnew {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .first__title {
     font-family: var(--ff-gill);
     color: var(--clr-black);
@@ -451,6 +457,7 @@ html {
     font-size: 1.1em;
     position: relative;
     bottom: 2.25em;
+    color: var(--clr-black)
 }
 
 .first__imagesall {
@@ -531,7 +538,7 @@ html {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin-top: 2em;
+    margin-top: 7em;
 }
 
 .proc__btn {
@@ -720,6 +727,7 @@ html {
     font-weight: 100;
     position: relative;
     bottom: 2.25em;
+    color: var(--clr-black);
 }
 
 .indiv__row1 {
@@ -875,4 +883,97 @@ html {
     max-height: 64px;
     position: relative;
     top: 0.7em;
+}
+
+/*illustration*/
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: 100px, 200px;
+    grid-gap: 10px;
+    grid-auto-flow: dense;
+    margin-bottom: 7em;
+}
+
+.gallery-item {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.gallery-item .image {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.gallery-item .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    cursor: pointer;
+}
+
+.w-2 {
+    grid-column: span 2;
+}
+
+.w-3 {
+    grid-column: span 3;
+}
+
+.w-4 {
+    grid-column: span 4;
+}
+
+.h-2 {
+    grid-row: span 2;
+}
+
+.illust__button {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5em;
+}
+
+.vn__contents {
+    margin: 0em 7em 0em 7em;
+}
+
+.vn__image {
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+}
+
+.image__explanation {
+    display: flex;
+    align-items: center;
+    margin-bottom: 7em;
+}
+
+.image__explanation2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5em;
+}
+
+.vn__para {
+    font-family: var(--ff-gill);
+    font-size: 1.2em;
+    color: var(--clr-black);
+    line-height: 1.5em;
+    padding: 5em;
+}
+
+.bodypara a {
+    text-decoration: none;
+    color: #b39831;
+}
+
+.bodypara a:hover {
+    transform: scale(1.2, 1.2);
 }
