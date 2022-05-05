@@ -969,11 +969,11 @@ html {
     padding: 5em;
 }
 
-.bodypara a {
+.vn__para a {
     text-decoration: none;
     color: #b39831;
 }
 
-.bodypara a:hover {
+.vn__para a:hover {
     transform: scale(1.2, 1.2);
 }
