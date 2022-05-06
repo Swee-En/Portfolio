@@ -172,6 +172,7 @@ html {
     font-family: var(--ff-gill);
     font-size: 1.2em;
     color: var(--clr-black);
+    text-align: justify;
     margin-bottom: 2em;
     line-height: 1.5em;
 }
